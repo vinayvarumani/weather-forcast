@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-widget">
+        <!-- Header -->
+        <header>
+            <h1>Weather Now</h1>
+        </header>
+
+        <!-- Current Weather Section -->
+        <section class="current-weather">
+            <h2 id="location">New York, NY</h2>
+            <div class="weather-info">
+                <img id="weather-icon" src="cloudy.png" alt="sunny" >
+                <div class="temperature" id="temperature">25°C</div>
+            </div>
+            <div class="description" id="weather-description">Sunny</div>
+        </section>
+
+        <!-- Weather Forecast Section -->
+        <section class="weather-forecast">
+            <div class="forecast" id="day1">
+                <div class="date">Mon</div>
+                <img src="cloudy.png" alt="Cloudy">
+                <div class="temp">20°C / 15°C</div>
+            </div>
+            <div class="forecast" id="day2">
+                <div class="date">Tue</div>
+                <img src="rainy.png" alt="Rainy">
+                <div class="temp">18°C / 12°C</div>
+            </div>
+            <div class="forecast" id="day3">
+                <div class="date">Wed</div>
+                <img src="sunny.png" alt="Sunny">
+                <div class="temp">22°C / 16°C</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <button id="refresh-button">Refresh</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
